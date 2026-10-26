@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    double n1, n2, rp, nw, mf;
+    
+    printf("Insira as notas:\n");
+    
+    scanf("%lf%lf", &n1, &n2);
+    
+    rp = (n1 + n2) / 2;
+    
+    if(rp >= 7.0){
+        printf("Aprovado: %.1lf\n", rp);
+    }
+    else if(rp < 7.0){
+        printf("Insira a nota do Exame Final:\n");
+        scanf("%lf", &nw);
+        mf = (rp + nw) / 2;
+        
+        if(mf >= 7.0){
+            printf("Aprovado: 6.0\n");
+        }
+        else{
+            printf("Reprovado\n");
+        }
+        
+    }
+    
+ 
+    return 0;
+}
